@@ -7,6 +7,93 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
 
-div .logo img {
-    width: 500px;
+/* Style initial de la barre de navigation */
+#navbar {
+    display: flex;
+    background-color: #fff;
+    color: #fff;
+    position: relative;
+    transition: top 10s;
+    height: 70px;
+    z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+}
+
+/* Style lorsque la barre de navigation est fixée en haut de la page */
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+}
+
+.logotitre {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.logotitre a {
+    text-decoration: none;
+    color: #05063e; /** bleu **/
+    font-size: 150%; /** 1.2rem  **/
+    font-weight: bold;
+}
+
+.logotitre a span {
+    color: #787609; /** or **/
+}
+
+.logo {
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: auto;
+
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: auto;
+    right: -10px;
+}
+
+.nav-search__el {
+  display: flex;
+  justify-content: center;
+
+}
+
+/** les differentes pages du menu **/
+.nav-items {
+    flex-grow: 1; /* Permet à la barre de navigation de prendre tout l'espace disponible */
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.nav-item {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #05063e;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.nav-item a:hover {
+    color: #787609;
+}
+
+
+.burger-menu {
+    display: none;
 }
