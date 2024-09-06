@@ -6,6 +6,6 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
 
-div .logo{
-    width: 100px;
+div .logo img {
+    width: 500px;
 }
