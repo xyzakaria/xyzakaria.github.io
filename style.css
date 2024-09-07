@@ -23,6 +23,7 @@ body {
   width: 100%;
   z-index: 1000;
   background: linear-gradient(to bottom, #11c4ff, #4661ff);
+  opacity: 50%;
 }
 
 .navbar .logo img {
