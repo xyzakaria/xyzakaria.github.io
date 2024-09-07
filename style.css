@@ -101,6 +101,6 @@ body {
 #countdown {
     font-size: 3em;
     font-family: 'Arial Black', sans-serif;
-    color: #ff4500;
+    color: linear-gradient(to bottom, #11c4ff, #4661ff);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
