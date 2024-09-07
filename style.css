@@ -1,12 +1,80 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #f1f1f1;
-    background-image: url(img/backimg.jpg);
-    font-family: 'Montserrat', sans-serif;
-  }
+/* Styles Globaux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-div .logo img {
-    width: 100px;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f1f1f1;
+  background-image: url('img/backimg.jpg');
+  padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
+}
+
+/* Styles de la Navbar */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Navbar toujours en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #11c4ff, #4661ff);
+}
+
+.navbar .logo img {
+  width: 100px; /* Taille du logo */
+  height: auto;
+}
+
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Styles de la Table */
+.tableur {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; /* Ajoute un espace supplémentaire */
+}
+
+.ttable {
+  width: 50%; /* Réduit la table à 50% de la largeur de l'écran */
+  border-collapse: collapse;
+}
+
+.ttable th, .ttable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
 }
