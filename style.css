@@ -1,99 +1,87 @@
+/* Styles Globaux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #f1f1f1;
-    background-image: url(img/backimg.jpg);
-    font-family: 'Montserrat', sans-serif;
-  }
-
-/* Style initial de la barre de navigation */
-#navbar {
-    display: flex;
-    background-color: #fff;
-    color: #fff;
-    position: relative;
-    transition: top 10s;
-    height: 70px;
-    z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+  font-family: 'Montserrat', sans-serif;
+  background: #f1f1f1;
+  background-image: url('img/back50.jpg');
+  padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
 }
 
-/* Style lorsque la barre de navigation est fixée en haut de la page */
-#navbar.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+/* Styles de la Navbar */
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Navbar toujours en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #11c4ff, #4661ff);
 }
 
-.logotitre {
-    display: flex;
-    align-items: center;
-    margin-left: 3%;
+.navbar .logo img {
+  width: 50px; /* Taille du logo */
+  height: auto;
 }
 
-.logotitre a {
-    text-decoration: none;
-    color: #05063e; /** bleu **/
-    font-size: 150%; /** 1.2rem  **/
-    font-weight: bold;
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.logotitre a span {
-    color: #787609; /** or **/
+.nav-links {
+  list-style: none;
+  display: flex;
 }
 
-.logo {
-    width: 50px;
-    margin-top: 10px;
-    margin-left: 3%;
-    margin-right: auto;
-
+.nav-links li {
+  margin-left: 20px;
 }
 
-
-.nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-left: auto;
-    right: -10px;
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: background 0.3s ease;
 }
 
-.nav-search__el {
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Styles de la Table */
+.tableur {
   display: flex;
   justify-content: center;
-
+  margin-top: 100px; /* Ajoute un espace supplémentaire */
 }
 
-/** les differentes pages du menu **/
-.nav-items {
-    flex-grow: 1; /* Permet à la barre de navigation de prendre tout l'espace disponible */
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
+.ttable {
+  width: 50%; /* Réduit la table à 50% de la largeur de l'écran */
+  border-collapse: collapse;
+  border-radius: 10px; /* Arrondi des coins du tableau */
+  overflow: hidden; /* Assure que les coins des cellules suivent l'arrondi */
 }
 
-.nav-item {
-    text-decoration: none;
-    padding: 10px;
+.ttable th, .ttable td {
+  border: 5px solid black;
+  padding: 8px;
+  margin: 2px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  
 }
-
-.nav-item a {
-    text-decoration: none;
-    color: #05063e;
-    font-weight: 600;
-    margin-right: 20px;
-}
-
-.nav-item a:hover {
-    color: #787609;
-}
-
-
-.burger-menu {
-    display: none;
+.ttable th:hover, .ttable td:hover {
+  background-color: #11c4ff;
 }
