@@ -23,7 +23,7 @@ body {
   width: 100%;
   z-index: 1000;
   background: linear-gradient(to bottom, #11c4ff, #4661ff);
-  opacity: 50%;
+  opacity: 30%;
 }
 
 .navbar .logo img {
@@ -48,7 +48,7 @@ body {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
@@ -56,7 +56,7 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: #555;
+  background-color: #77bfff;
   border-radius: 4px;
 }
 
