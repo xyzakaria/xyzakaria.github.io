@@ -4,10 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  background: url("img\championns1.jpg")
+}
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url('img\championns1.jpg');
+  background-image: url("img\championns1.jpg");
   padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
 }
 
