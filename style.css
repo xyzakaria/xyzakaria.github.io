@@ -84,3 +84,23 @@ body {
 .ttable tr:hover {
   background-color: #11c4ff;
 }
+
+/* Centrer le contenu de la page */
+body {
+    text-align: center;
+}
+
+/* Style du compte à rebours */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+}
+
+#countdown {
+    font-size: 3em;
+    font-family: 'Arial Black', sans-serif;
+    color: #ff4500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
