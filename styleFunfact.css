@@ -181,3 +181,22 @@ button {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
+
+/* Bouton Retour */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #58a3f7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #30cfd0;
+}
