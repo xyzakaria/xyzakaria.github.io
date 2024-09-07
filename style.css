@@ -8,9 +8,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-image: url("img/background.png");
-  background-size:cover;
+  background-size: cover;
   background-attachment: local;
-  padding-top: 100px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
+  padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
+  text-align: center; /* Centrer le contenu de la page */
 }
 
 /* Styles de la Navbar */
@@ -24,8 +25,8 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(to bottom, #11c4ff, #4661ff);
-  opacity: 50%;
+  background: rgba(255, 255, 255, 0.1); /* Transparence avec un léger fond */
+  backdrop-filter: blur(10px); /* Effet de flou derrière la navbar */
 }
 
 .navbar .logo img {
@@ -58,7 +59,7 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: #555;
+  background-color: rgba(255, 255, 255, 0.3); /* Légère couleur au survol */
   border-radius: 4px;
 }
 
@@ -66,7 +67,7 @@ body {
 .tableur {
   display: flex;
   justify-content: center;
-  margin-top: 100px; /* Ajoute un espace supplémentaire */
+  margin-top: 100px; /* Espace supplémentaire sous la navbar */
 }
 
 .ttable {
@@ -74,43 +75,19 @@ body {
   border-collapse: collapse;
   border-radius: 10px; /* Arrondi des coins du tableau */
   overflow: hidden; /* Assure que les coins des cellules suivent l'arrondi */
+  background: rgba(255, 255, 255, 0.7); /* Opacité de la table */
+  backdrop-filter: blur(5px); /* Effet de flou derrière la table */
 }
 
 .ttable th, .ttable td {
-  border: 5px solid rgb(180, 16, 16);
+  border: 2px solid rgb(180, 16, 16); /* Bordures fines */
   padding: 8px;
-  margin: 2px;
   text-align: left;
-  transition: background-color 0.3s ease;
-  
+  transition: background-color 0.3s ease; /* Transition sur hover */
 }
+
 .ttable tr:hover {
-  background-color: #11c4ff;
-}
-
-/* Centrer le contenu de la page */
-body {
-    text-align: center;
-}
-
-/* Style du compte à rebours */
-.countdown-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
-}
-
-#countdown {
-    font-size: 3em;
-    font-family: 'Arial Black', sans-serif;
-    color: linear-gradient(to bottom, #11c4ff, #4661ff);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Centrer le contenu de la page */
-body {
-    text-align: center;
+  background-color: rgba(17, 196, 255, 0.5); /* Couleur avec transparence au survol */
 }
 
 /* Style du compte à rebours */
@@ -124,6 +101,6 @@ body {
 #countdown {
   font-size: 3em;
   font-family: 'Arial Black', sans-serif;
-  color: linear-gradient(to bottom, #11c4ff, #4661ff);
+  color: #4661ff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
