@@ -70,10 +70,18 @@ body {
 .ttable {
   width: 50%; /* Réduit la table à 50% de la largeur de l'écran */
   border-collapse: collapse;
+  border-radius: 10px; /* Arrondi des coins du tableau */
+  overflow: hidden; /* Assure que les coins des cellules suivent l'arrondi */
 }
 
 .ttable th, .ttable td {
-  border: 1px solid black;
+  border: 5px solid black;
   padding: 8px;
+  margin: 2px;
   text-align: left;
+  transition: background-color 0.3s ease;
+  
+}
+.ttable th:hover, .ttable td:hover {
+  background-color: #11c4ff;
 }
