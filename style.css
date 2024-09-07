@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url('img/back50.jpg');
+  background-image: url('img\championns1.jpg');
   padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
 }
 
@@ -23,7 +23,6 @@ body {
   width: 100%;
   z-index: 1000;
   background: linear-gradient(to bottom, #11c4ff, #4661ff);
-  opacity: 50%;
 }
 
 .navbar .logo img {
@@ -84,24 +83,4 @@ body {
 }
 .ttable tr:hover {
   background-color: #11c4ff;
-}
-
-/* Centrer le contenu de la page */
-body {
-    text-align: center;
-}
-
-/* Style du compte à rebours */
-.countdown-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
-}
-
-#countdown {
-    font-size: 3em;
-    font-family: 'Arial Black', sans-serif;
-    color: linear-gradient(to bottom, #11c4ff, #4661ff);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
