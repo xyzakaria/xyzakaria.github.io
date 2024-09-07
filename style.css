@@ -82,6 +82,6 @@ body {
   transition: background-color 0.3s ease;
   
 }
-.ttable th:hover, .ttable td:hover {
+.ttable tr:hover {
   background-color: #11c4ff;
 }
