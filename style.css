@@ -8,13 +8,12 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background: #f1f1f1;
-  background-image: url('https://cdn.discordapp.com/attachments/1066816331648860222/1282025998405337129/image.png?ex=66dddb40&is=66dc89c0&hm=19864c52e1a970f7e79c76fed086d2b9336dca4d43b9d29fc6be6968c56a91cc&');
+  background-image: url('img/back50.jpg');
   padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
 }
 
 /* Styles de la Navbar */
 .navbar {
-  background-color: #333;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,7 @@ body {
 }
 
 .navbar .logo img {
-  width: 100px; /* Taille du logo */
+  width: 50px; /* Taille du logo */
   height: auto;
 }
 
