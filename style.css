@@ -3,11 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("img\championns1.jpg")
 }
-
-  
-
+html{
+  background: url("img\championns1.jpg")
+}
 body {
   font-family: 'Montserrat', sans-serif;
   background-image: url("img\championns1.jpg");
