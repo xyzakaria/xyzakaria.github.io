@@ -10,7 +10,7 @@ body {
   background-image: url("img/background.png");
   background-size:cover;
   background-attachment: local;
-  padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
+  padding-top: 100px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
 }
 
 /* Styles de la Navbar */
