@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #f1f1f1;
   background-image: url('img/back50.jpg');
   padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
 }
