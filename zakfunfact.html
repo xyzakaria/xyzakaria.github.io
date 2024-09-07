@@ -117,6 +117,7 @@
     <script>
         function showPopup() {
             const sound = document.getElementById('popupSound');
+            sound.volume = 0.1;
             sound.play();
             document.getElementById('overlay').style.display = 'block';
             document.getElementById('dialog').style.display = 'block';
