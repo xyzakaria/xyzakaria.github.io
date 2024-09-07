@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("img/championns1.jpg");
+  background-image: url("img/background.jpg");
   padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
 }
 
