@@ -204,3 +204,11 @@ button {
 .back-button:hover {
     background-color: #30cfd0;
 }
+
+.sudoku-container {
+    display: flex;
+    position: relative;
+    width: 50%; /* Définit la largeur à 60% de l'écran */
+    margin: 20px auto; /* Centrer le conteneur */
+    padding: 10px; /* Optionnel : Ajouter de l'espace autour du jeu */
+}
