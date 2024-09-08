@@ -8,9 +8,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-image: url("img/background.png");
-  background-position: center;
-  background-size: cover;
-  background-attachment: local;
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center; /* L'image est centrée */
+  background-repeat: no-repeat; /* L'image ne se répète pas */
+  background-attachment: fixed;
   padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
   text-align: center; /* Centrer le contenu de la page */
 }
@@ -31,7 +32,7 @@ body {
 }
 
 .navbar .logo img {
-  width: 50px; /* Taille du logo */
+  width: 20px; /* Taille du logo */
   height: auto;
 }
 
