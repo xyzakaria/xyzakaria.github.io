@@ -8,6 +8,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-image: url("img/background.png");
+  background-position: center;
   background-size: cover;
   background-attachment: local;
   padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
@@ -111,13 +112,14 @@ body {
 
 /* Footer */
 .footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8); /* Fond noir avec transparence */
   color: #fff;
   padding: 20px 0;
+  margin-top: 500px;
+  
 }
 
 .footer-content {
