@@ -87,7 +87,7 @@ body {
 }
 
 .ttable tr:hover {
-  background-color: rgba(17, 196, 255, 0.5); /* Couleur avec transparence au survol */
+  background-color: rgba(238, 50, 50, 0.5); /* Couleur avec transparence au survol */
 }
 
 /* Style du compte à rebours */
