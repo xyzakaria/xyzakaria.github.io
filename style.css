@@ -180,7 +180,7 @@ p{
 
 /* Clip Background Image */
 
-	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  background: url('img/goldoroger.png') repeat-y;
 	  -webkit-background-clip: text;
 	  background-clip: text;
 
