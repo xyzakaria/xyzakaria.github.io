@@ -13,16 +13,18 @@ function calculateTimeUntil(targetDate) {
 
     const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const hoursDifference = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutesDifference = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const secondsDifference = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    return { days: daysDifference, hours: hoursDifference };
+    return { days: daysDifference, hours: hoursDifference, minutes: minutesDifference, seconds: secondsDifference };
 }
 
 function updateCountdown() {
     const timeUntil = calculateTimeUntil('October 26, 2024');
     const countdownElement = document.getElementById('countdown');
-    countdownElement.innerText = `J-${timeUntil.days} et ${timeUntil.hours} heure(s)`;
+    countdownElement.innerText = `J-${timeUntil.days} H-${timeUntil.hours} M-${timeUntil.minutes} S-${timeUntil.seconds}`;
 }
 
-// Update the countdown immediately and then every hour
+// Update the countdown immediately and then every second
 updateCountdown();
-setInterval(updateCountdown, 1000 * 60 * 60);
+setInterval(updateCountdown, 1000);
