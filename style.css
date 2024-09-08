@@ -19,7 +19,7 @@ body {
 .navbar {
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: fixed; /* Navbar toujours en haut */
   top: 0;
@@ -163,7 +163,7 @@ h1.MENS{
   width: 40em;
   margin: 0 0 0 -20em;
   font-family: 'fangsong';
-  color: gold;
+  color: #fdba00f6 ;
 }
 
  
