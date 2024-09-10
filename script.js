@@ -1,3 +1,6 @@
+
+
+
 function calculateDaysUntil(targetDate) {
     const currentDate = new Date();
     const target = new Date(targetDate);
@@ -25,3 +28,7 @@ function updateCountdown() {
 // Update the countdown immediately and then every second
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+
+
+
