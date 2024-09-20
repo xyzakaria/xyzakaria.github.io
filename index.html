@@ -34,6 +34,13 @@
         
         
         </div>
+
+        <div class="audio-section">
+            <audio id="audioPlayer" autoplay loop muted>
+                <source src="audio/acceuil.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas la balise audio.
+            </audio>
+        </div>
         
         <div class="tableur">
             <table class="ttable">
@@ -55,7 +62,7 @@
         <footer class="footer">
             <div class="footer-content">
                 <a href="index.html"><img src="img/logo.png" alt="logo" class="footer-logo"></a>
-    #      <ul class="footer-links">
+         <ul class="footer-links">
                     <li><a href="#">© 2019-2024 3301 Inc.</a></li>
                     <li><a href="#">Lien 2</a></li>
                     <li><a href="#">Lien 3</a></li>
@@ -64,7 +71,18 @@
         </footer>
     
         
+        <script>
+            var audio = document.getElementById("audioPlayer");
 
+            // Baisser le volume à 75% au chargement
+            audio.volume = 0.75;
+
+            // Activer le son quand l'utilisateur survole le body
+            document.body.addEventListener("mouseover", function() {
+                audio.muted = false; // Activer le son
+            });
+
+        </script>
         
     </body>
 </html>
