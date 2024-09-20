@@ -16,7 +16,7 @@
   
   body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url("img/backimg.jpg");
+    background:linear-gradient(45deg, #002433, #123c4b);
     background-position: center;
     background-size: cover;
     background-attachment: local;
@@ -40,7 +40,7 @@
   }
   
   .navbar .logo img {
-    width: 50px; /* Taille du logo */
+    width: 30px; /* Taille du logo */
     height: auto;
   }
   
@@ -74,7 +74,7 @@
   }
 
   .container{
-    background:linear-gradient(45deg, #002433, #083644);
+    background:linear-gradient(45deg, #bebebe, #bdf0ff);
     padding:15px 9%;
     padding-bottom: 100px;
   }
@@ -89,7 +89,7 @@
 
   .container .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
     gap:15px;
 
   }
@@ -98,7 +98,7 @@
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     background: #fff;
-    text-align: center;
+    /* text-align: center; */
     padding: 30px 20px ;
   }
 
