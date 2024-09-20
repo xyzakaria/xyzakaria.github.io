@@ -4,24 +4,44 @@
         <meta charset="utf-8">
         <title>Jo Averroes</title>
         <link href="style.css" rel="stylesheet" type="text/css">
+        
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    <a href="index.html"><img src="img/logobanc.png" alt="logo"></a>
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="jeux.com">Jeux</a></li>
-                    <li><a href="timer/timer.html">Tamer</a></li>
+                    <li><a href="gaming/jeux.html">Jeux</a></li>
+                    <li><a href="timer/timer.html">Timer</a></li>
                     <li><a href="funfact/zakfunfact.html">Zak Fun Fact</a></li>
                 </ul>
             </nav>
         </header>
+        
+        <div class="box-middle">
+            <h1 class="MENS">MENS SANA IN COPORE SANO</h1>
+        <p>
+            <span id="countdown">
+                
+                <div id="countdown"></div>
+                
+                <script src="script.js"></script>
+            </span>
+          </p>
+        
+        
+        </div>
 
-        <h1>LE JEU C'EST BIEN, LE JEU C'EST NOUS</h1>
-
+        <div class="audio-section">
+            <audio id="audioPlayer" autoplay loop muted>
+                <source src="audio/acceuil.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas la balise audio.
+            </audio>
+        </div>
+        
         <div class="tableur">
             <table class="ttable">
                 <thead>
@@ -30,13 +50,39 @@
                         <th>Points</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody >
                     <tr><td>TEAM 1</td><td>0</td></tr>
                     <tr><td>TEAM 2</td><td>0</td></tr>
                     <tr><td>TEAM 3</td><td>0</td></tr>
-
                 </tbody>
             </table>
         </div>
+
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <a href="index.html"><img src="img/logo.png" alt="logo" class="footer-logo"></a>
+         <ul class="footer-links">
+                    <li><a href="#">© 2019-2024 3301 Inc.</a></li>
+                    <li><a href="#">Lien 2</a></li>
+                    <li><a href="#">Lien 3</a></li>
+                </ul>
+            </div>
+        </footer>
+    
+        
+        <script>
+            var audio = document.getElementById("audioPlayer");
+
+            // Baisser le volume à 75% au chargement
+            audio.volume = 0.75;
+
+            // Activer le son quand l'utilisateur survole le body
+            document.body.addEventListener("mouseover", function() {
+                audio.muted = false; // Activer le son
+            });
+
+        </script>
+        
     </body>
 </html>

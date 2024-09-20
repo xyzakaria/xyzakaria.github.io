@@ -7,9 +7,74 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #f1f1f1;
-  background-image: url('img/back50.jpg');
-  padding-top: 60px; /* Ajoute un espacement pour éviter que le contenu chevauche la navbar */
+  background-image: url("img/background.png");
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center; /* L'image est centrée */
+  background-repeat: no-repeat; /* L'image ne se répète pas */
+  background-attachment: fixed;
+  padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
+  text-align: center; /* Centrer le contenu de la page */
+}
+
+h1.MENS {
+  letter-spacing: 0.1rem;
+  top: 175px;
+  position: absolute;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+  font-family: 'fangsong';
+  font-size: medium;
+  color: #fdba00f6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ajoute une ombre au texte */
+}
+
+p{
+  font-weight: bold;
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(253, 252, 252, 0.25);
+  border-width: 4px 0;
+  padding: 50px;
+  padding-bottom: 0;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+
+span {
+  display: grid;
+  font: 56px "Trebuchet MS";
+  
+  letter-spacing: 0;
+  
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
+  
+  font-weight: 1000;
+  /* Clip Background Image */
+  background: url('img/goldoroger.png') repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 /* Styles de la Navbar */
@@ -23,11 +88,12 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(to bottom, #11c4ff, #4661ff);
+  background: rgba(255, 255, 255, 0.1); /* Transparence avec un léger fond */
+  backdrop-filter: blur(10px); /* Effet de flou derrière la navbar */
 }
 
 .navbar .logo img {
-  width: 50px; /* Taille du logo */
+  width: 20px; /* Taille du logo */
   height: auto;
 }
 
@@ -56,7 +122,7 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: #555;
+  background-color: rgba(255, 255, 255, 0.3); /* Légère couleur au survol */
   border-radius: 4px;
 }
 
@@ -64,7 +130,7 @@ body {
 .tableur {
   display: flex;
   justify-content: center;
-  margin-top: 100px; /* Ajoute un espace supplémentaire */
+  margin-top: 1000px; /* Espace supplémentaire sous la navbar */
 }
 
 .ttable {
@@ -72,16 +138,365 @@ body {
   border-collapse: collapse;
   border-radius: 10px; /* Arrondi des coins du tableau */
   overflow: hidden; /* Assure que les coins des cellules suivent l'arrondi */
+  background: rgba(255, 255, 255, 0.7); /* Opacité de la table */
+  backdrop-filter: blur(5px); /* Effet de flou derrière la table */
 }
 
 .ttable th, .ttable td {
-  border: 5px solid black;
+  border: 2px solid rgb(180, 16, 16); /* Bordures fines */
   padding: 8px;
-  margin: 2px;
   text-align: left;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Transition sur hover */
+}
+
+.ttable tr:hover {
+  background-color: rgba(238, 50, 50, 0.5); 
   
 }
+
+
+/* Footer */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond noir avec transparence */
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 500px;
+  position: flex ;
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 20px;
+  height: auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin-left: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #11c4ff; /* Changement de couleur au survol */
+}
+
+
+h1.MENS {
+  letter-spacing: 0.1rem;
+  top: 175px;
+  position: absolute;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+  font-family: 'fangsong';
+  font-size: medium;
+  color: #fdba00f6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ajoute une ombre au texte */
+}
+
+p{
+  font-weight: bold;
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(253, 252, 252, 0.25);
+  border-width: 4px 0;
+  padding: 50px;
+  padding-bottom: 0;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+
+span {
+  display: grid;
+  font: 56px "Trebuchet MS";
+  
+  letter-spacing: 0;
+  
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
+  
+  font-weight: 1000;
+  /* Clip Background Image */
+  background: url('img/goldoroger.png') repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
+
+
+
+
+
+/* Animate Background Image */
+
+@keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Styles Globaux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("img/background.png");
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center; /* L'image est centrée */
+  background-repeat: no-repeat; /* L'image ne se répète pas */
+  background-attachment: fixed;
+  padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
+  text-align: center; /* Centrer le contenu de la page */
+}/* Styles Globaux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("img/background.png");
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center; /* L'image est centrée */
+  background-repeat: no-repeat; /* L'image ne se répète pas */
+  background-attachment: fixed;
+  padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
+  text-align: center; /* Centrer le contenu de la page */
+}
+
+h1.MENS {
+  letter-spacing: 0.1rem;
+  top: 175px;
+  position: absolute;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+  font-family: 'fangsong';
+  font-size: medium;
+  color: #fdba00f6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ajoute une ombre au texte */
+}
+
+p {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(253, 252, 252, 0.25);
+  border-width: 4px 0;
+  padding: 50px;
+  padding-bottom: 0;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+
+span {
+  display: grid;
+  font: 56px "Trebuchet MS";
+  letter-spacing: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ajoute une ombre au texte */
+  font-weight: 1000;
+  /* Clip Background Image */
+  background: url('img/goldoroger.png') repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Styles de la Navbar */
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed; /* Navbar toujours en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1); /* Transparence avec un léger fond */
+  backdrop-filter: blur(10px); /* Effet de flou derrière la navbar */
+}
+
+.navbar .logo img {
+  width: 20px; /* Taille du logo */
+  height: auto;
+}
+
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Légère couleur au survol */
+  border-radius: 4px;
+}
+
+/* Styles de la Table */
+.tableur {
+  display: flex;
+  justify-content: center;
+  margin-top: 700px; /* Espace supplémentaire sous la navbar */
+}
+
+.ttable {
+  width: 50%; /* Réduit la table à 50% de la largeur de l'écran */
+  border-collapse: collapse;
+  border-radius: 10px; /* Arrondi des coins du tableau */
+  overflow: hidden; /* Assure que les coins des cellules suivent l'arrondi */
+  background: rgba(255, 255, 255, 0.7); /* Opacité de la table */
+  backdrop-filter: blur(5px); /* Effet de flou derrière la table */
+}
+
+.ttable th, .ttable td {
+  border: 2px solid rgb(180, 16, 16); /* Bordures fines */
+  padding: 8px;
+  text-align: left;
+  transition: background-color 0.3s ease; /* Transition sur hover */
+}
+
 .ttable tr:hover {
-  background-color: #11c4ff;
+  background-color: rgba(238, 50, 50, 0.5); /* Couleur avec transparence au survol */
+}
+
+/* Style du compte à rebours */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#countdown {
+  font-size: 3em;
+  font-family: 'Arial Black', sans-serif;
+  color: #4661ff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ajoute une ombre au texte */
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond noir avec transparence */
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 500px;
+  position: flex;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 20px;
+  height: auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin-left: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #11c4ff; /* Changement de couleur au survol */
 }
