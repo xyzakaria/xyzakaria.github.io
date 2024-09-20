@@ -4,85 +4,121 @@
         <meta charset="utf-8">
         <title>Jo Averroes</title>
         <link href="style.css" rel="stylesheet" type="text/css">
-        
+        <style>
+            /* Style pour le body */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Superposition pour "Prêt ?" */
+            #overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2em;
+                z-index: 9999;
+                cursor: pointer;
+            }
+
+            /* Flouter uniquement le contenu principal (pas l'overlay) */
+            #content {
+                filter: blur(10px);
+                transition: filter 0.5s ease;
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logobanc.png" alt="logo"></a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="gaming/jeux.html">Jeux</a></li>
-                    <li><a href="timer/timer.html">Timer</a></li>
-                    <li><a href="funfact/zakfunfact.html">Zak Fun Fact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="box-middle">
-            <h1 class="MENS">MENS SANA IN COPORE SANO</h1>
-        <p>
-            <span id="countdown">
-                
-                <div id="countdown"></div>
-                
-                <script src="script.js"></script>
-            </span>
-          </p>
-        
-        
+        <div id="overlay">
+            Prêt ?
         </div>
 
-        <div class="audio-section">
-            <audio id="audioPlayer" autoplay loop muted>
-                <source src="audio/acceuil.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas la balise audio.
-            </audio>
-        </div>
-        
-        <div class="tableur">
-            <table class="ttable">
-                <thead>
-                    <tr>
-                        <th>NOM</th>
-                        <th>Points</th>
-                    </tr>
-                </thead>
-                <tbody >
-                    <tr><td>TEAM 1</td><td>0</td></tr>
-                    <tr><td>TEAM 2</td><td>0</td></tr>
-                    <tr><td>TEAM 3</td><td>0</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        
-        <footer class="footer">
-            <div class="footer-content">
-                <a href="index.html"><img src="img/logo.png" alt="logo" class="footer-logo"></a>
-         <ul class="footer-links">
-                    <li><a href="#">© 2019-2024 3301 Inc.</a></li>
-                    <li><a href="#">Lien 2</a></li>
-                    <li><a href="#">Lien 3</a></li>
-                </ul>
+        <!-- Tout le contenu de la page est dans cette div floue -->
+        <div id="content">
+            <header>
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logobanc.png" alt="logo"></a>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="gaming/jeux.html">Jeux</a></li>
+                        <li><a href="timer/timer.html">Timer</a></li>
+                        <li><a href="funfact/zakfunfact.html">Zak Fun Fact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="box-middle">
+                <h1 class="MENS">MENS SANA IN COPORE SANO</h1>
+                <p>
+                    <span id="countdown">
+                        <div id="countdown"></div>
+                        <script src="script.js"></script>
+                    </span>
+                </p>
             </div>
-        </footer>
-    
-        
+
+            <!-- iframe pour activer l'autoplay -->
+            <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display:none;"></iframe>
+            
+            <!-- Section audio principale -->
+            <div class="audio-section">
+                <audio id="player" loop>
+                    <source src="audio/acceuil.mp3" type="audio/mpeg">
+                    <source src="audio/acceuil.ogg" type="audio/ogg">
+                    Votre navigateur ne supporte pas la balise audio.
+                </audio>
+            </div>
+            
+            <div class="tableur">
+                <table class="ttable">
+                    <thead>
+                        <tr>
+                            <th>NOM</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>TEAM 1</td><td>0</td></tr>
+                        <tr><td>TEAM 2</td><td>0</td></tr>
+                        <tr><td>TEAM 3</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <a href="index.html"><img src="img/logo.png" alt="logo" class="footer-logo"></a>
+                    <ul class="footer-links">
+                        <li><a href="#">© 2019-2024 3301 Inc.</a></li>
+                        <li><a href="#">Lien 2</a></li>
+                        <li><a href="#">Lien 3</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
         <script>
-            var audio = document.getElementById("audioPlayer");
+            var audio = document.getElementById("player");
 
-            // Baisser le volume à 75% au chargement
-            audio.volume = 0.75;
-
-            // Activer le son quand l'utilisateur survole le body
-            document.body.addEventListener("mouseover", function() {
-                audio.muted = false; // Activer le son
+            // Ajouter un événement au clic sur la superposition
+            document.getElementById("overlay").addEventListener("click", function() {
+                // Supprimer le flou sur le contenu
+                document.getElementById("content").style.filter = "none";
+                // Enlever l'overlay
+                document.getElementById("overlay").style.display = "none";
+                // Démarrer l'audio
+                audio.play();
             });
-
         </script>
-        
     </body>
 </html>
