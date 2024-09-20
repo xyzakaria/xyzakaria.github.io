@@ -81,7 +81,7 @@ span {
 .navbar {
   padding: 10px 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   position: fixed; /* Navbar toujours en haut */
   top: 0;
