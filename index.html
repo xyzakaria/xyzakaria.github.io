@@ -29,10 +29,16 @@
                 cursor: pointer;
             }
 
-            /* Flouter uniquement le contenu principal (pas l'overlay) */
+            /* Flouter et masquer le contenu principal (pas l'overlay) */
             #content {
                 filter: blur(10px);
-                transition: filter 0.5s ease;
+                transition: filter 0.5s ease; /* Transition pour le flou */
+                display: none; /* Cacher le contenu avant le clic */
+            }
+
+            /* Afficher le contenu après le clic */
+            #content.show {
+                display: block; /* Le rendre visible */
             }
         </style>
     </head>
@@ -112,10 +118,18 @@
 
             // Ajouter un événement au clic sur la superposition
             document.getElementById("overlay").addEventListener("click", function() {
-                // Supprimer le flou sur le contenu
-                document.getElementById("content").style.filter = "none";
                 // Enlever l'overlay
                 document.getElementById("overlay").style.display = "none";
+
+                // Afficher le contenu (le rendre visible)
+                var content = document.getElementById("content");
+                content.classList.add("show");
+
+                // Supprimer le flou après un court délai pour un effet plus fluide
+                setTimeout(function() {
+                    content.style.filter = "none"; // Supprimer le flou
+                }, 50); // Attendre 50 ms pour éviter les problèmes d'affichage
+
                 // Démarrer l'audio
                 audio.play();
             });
