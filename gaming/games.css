@@ -196,18 +196,81 @@
     transform: scale(1.03)
   }
 
+  /* tableau */
+
   .tableur{
     background-color: aliceblue;
-    padding: 60px 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
   }
 
-
-
-
-  footer{
-    background-color: #002433;
-    padding: 60px 20px;
+  .tableur .table{
+    padding: 0px ;
+    border-collapse: collapse;
+    width: 60%;
+    
   }
+
+  .table th{
+    border: 2px solid #1f1f1f; /* Bordures fines */
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease; /* Transition sur hover */
+  }
+
+  .table td{
+    border: 2px solid #1f1f1f; /* Bordures fines */
+    padding: 4px;
+
+  }
+  
+
+/* Footer */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond noir avec transparence */
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 500px;
+  position: flex;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 20px;
+  height: auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin-left: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #11c4ff; /* Changement de couleur au survol */
+}
+
 
 
   @media (max-width: 768px){

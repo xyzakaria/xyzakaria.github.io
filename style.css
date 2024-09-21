@@ -431,7 +431,7 @@ span {
 }
 
 .ttable th, .ttable td {
-  border: 2px solid rgb(180, 16, 16); /* Bordures fines */
+  border: 2px solid rgb(86, 10, 10); /* Bordures fines */
   padding: 8px;
   text-align: left;
   transition: background-color 0.3s ease; /* Transition sur hover */
