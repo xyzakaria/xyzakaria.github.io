@@ -131,6 +131,9 @@
     margin-right: -0.2%;
     margin-bottom: -0.2%;
     border: solid 2px #1f1f1f;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
     border-radius: 0 5px 0 0;
     width: 100%;
   }
@@ -139,6 +142,11 @@
     margin-bottom: -0.2%;
     margin-left: -0.2%;
     margin-right: -0.2%;
+    border: solid 2px #1f1f1f;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-radius: 0 0 5px 5px;
     
 
   }
@@ -157,9 +165,6 @@
     font-size: 15px;
     line-height: 1.8;
     padding: 10px 10px;
-    border: solid 2px #1f1f1f;
-    border-radius: 0 0 5px 0;
-    width: 100%;
   }
 
   .container .box-container .box .btn{
