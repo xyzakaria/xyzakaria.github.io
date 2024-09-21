@@ -104,6 +104,18 @@
     padding: 0px 0px ;
   }
 
+  .container .box-date {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    color: #bdf0ff;
+    background: #002433;
+    text-align: center; 
+    padding: 10px 10px ;
+    margin-bottom: 20px;
+    width:100%;
+    margin-right: -100px;
+
+  }
+
   .container .box-container .box img{
     height: 80px ;
   
