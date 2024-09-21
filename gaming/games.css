@@ -114,16 +114,23 @@
     align-items: center;
     padding: 0px 0;
     justify-content: flex-start;
-    margin-top: 0;
+    margin-top: -25px;
   }
 
   .container .box-container .box h3{
     color: #444;
     font-size: 18px;
+
+  }
+
+  .container .box-container .box .line1 .line1d{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 10px;
     border: solid 2px #1f1f1f;
     border-radius: 0 5px 0 0;
-
+    width: 100%;
   }
 
   .container .box-container .box h4{
@@ -139,7 +146,10 @@
     color: #777;
     font-size: 15px;
     line-height: 1.8;
-
+    padding: 10px 10px;
+    border: solid 2px #1f1f1f;
+    border-radius: 0 0 5px 0;
+    width: 100%;
   }
 
   .container .box-container .box .btn{
