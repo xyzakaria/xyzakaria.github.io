@@ -211,30 +211,34 @@
     width: 60%;
     border-collapse: collapse;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
+
   }
 
   
 
   .table th{
     border: 2px solid #bebebe; /* Bordures fines */
+    border-right-width: 0;
+    border-left-width: 0;
     border-bottom-width: 20px;
-    border-top-width: 20px;
     padding: 8px;
-    border-radius: 10px;
     text-align: left;
     transition: background-color 0.3s ease; /* Transition sur hover */
+    border-radius: 5px;
+  
   }
+
 
   .table tbody{
     padding-left: 10px;
+
   }
 
   .table tbody tr{
     border: 2px solid #bebebe; /* Bordures fines */
     border-bottom-width: 15px;
     border-top-width: 15px;
-    border-radius: 5px ;
 
   }
   
