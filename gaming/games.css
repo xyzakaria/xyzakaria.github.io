@@ -196,8 +196,18 @@
     transform: scale(1.03)
   }
 
+  .tableur{
+    background-color: aliceblue;
+    padding: 60px 20px;
+  }
 
-  
+
+
+
+  footer{
+    background-color: #002433;
+    padding: 60px 20px;
+  }
 
 
   @media (max-width: 768px){
