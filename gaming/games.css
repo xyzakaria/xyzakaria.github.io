@@ -97,9 +97,11 @@
   .container .box-container .box{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
+    border: solid 2px #1f1f1f;
+
     background: #fff;
     /* text-align: center; */
-    padding: 30px 20px ;
+    padding: 0px 0px ;
   }
 
   .container .box-container .box img{
@@ -107,12 +109,31 @@
   
   }
 
+  .container .box-container .box .line1 {
+    display: flex;
+    align-items: center;
+    padding: 0px 0;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
   .container .box-container .box h3{
     color: #444;
-    font-size: 22px;
-    padding: 10px 0;
+    font-size: 18px;
+    padding: 10px 10px;
+    border: solid 2px #1f1f1f;
+    border-radius: 0 5px 0 0;
 
   }
+
+  .container .box-container .box h4{
+    color: #444;
+    font-size: 16px;
+    padding: 10px 10px;
+    
+  }
+
+
 
   .container .box-container .box p{
     color: #777;
