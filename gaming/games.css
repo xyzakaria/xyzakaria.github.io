@@ -21,7 +21,7 @@
     background-size: cover;
     background-attachment: local;
     padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
-    text-align: center; /* Centrer le contenu de la page */
+    /* text-align: center; /* Centrer le contenu de la page */
   }
   
   /* Styles de la Navbar */
