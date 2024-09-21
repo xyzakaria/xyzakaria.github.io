@@ -199,7 +199,7 @@
   /* tableau */
 
   .tableur{
-    background-color: aliceblue;
+    background-color: #bebebe;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -208,24 +208,58 @@
 
   .tableur .table{
     padding: 0px ;
-    border-collapse: collapse;
     width: 60%;
-    
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
   }
 
+  
+
   .table th{
-    border: 2px solid #1f1f1f; /* Bordures fines */
+    border: 2px solid #bebebe; /* Bordures fines */
+    border-bottom-width: 20px;
+    border-top-width: 20px;
     padding: 8px;
+    border-radius: 10px;
     text-align: left;
     transition: background-color 0.3s ease; /* Transition sur hover */
   }
 
-  .table td{
-    border: 2px solid #1f1f1f; /* Bordures fines */
-    padding: 4px;
+  .table tbody{
+    padding-left: 10px;
+  }
+
+  .table tbody tr{
+    border: 2px solid #bebebe; /* Bordures fines */
+    border-bottom-width: 15px;
+    border-top-width: 15px;
+    border-radius: 5px ;
 
   }
   
+  .table th .thd {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+  }
+
+  .table td .tdd {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    padding-right: 20px;
+  }
+
+  .table td .tdg{
+    padding: 10px;
+    padding-left: 10px;
+  }
+
+  .table tr:hover {
+    background-color: #f5f5f5; /* Couleur avec transparence au survol */
+  }
+
 
 /* Footer */
 .footer {
