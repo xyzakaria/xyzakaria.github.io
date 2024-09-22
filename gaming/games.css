@@ -20,7 +20,8 @@
     background-position: center;
     background-size: cover;
     background-attachment: local;
-    padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
+    padding-top: 100px; 
+    /* Espace pour éviter le chevauchement avec la navbar */
     /* text-align: center; /* Centrer le contenu de la page */
   }
   
